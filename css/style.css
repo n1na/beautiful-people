@@ -1,0 +1,32 @@
+.container { 
+  height: 100%;
+  position: relative; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#reload {
+  margin: 0 auto;
+  padding: 5px 15px;
+  display: block;
+  background:white;
+  border:1px solid black;
+  outline: none;
+}
+
+#reload:active {
+  border:1px solid black;
+}
+
+#reload:hover {
+  background:black;
+  color:white;
+  cursor:pointer;
+}
