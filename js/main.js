@@ -3,7 +3,7 @@ var canvasDiv = document.getElementById('drawingCanvas');
 const centerX = window.innerWidth / 2;
 const centerY = window.innerHeight / 2;
 
-const headWidth = getRandom(Constants.HEAD_WIDTH_MIN_MAX);
+var headWidth = 0;
 const headHeight = Constants.HEAD_HEIGHT;
 
 
@@ -17,6 +17,9 @@ drawFace();
 // triggered on button click and load
 function drawFace() {
     two.clear(); // clear previous face
+
+    // set head width to new random value every time draw is triggered
+    headWidth = getRandom(Constants.HEAD_WIDTH_MIN_MAX);
 
     // draw head using two lines
     var headSegments = getRandom(Constants.HEAD_SEGMENTS_MIN_MAX);
